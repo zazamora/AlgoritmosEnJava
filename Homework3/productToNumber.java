@@ -11,16 +11,33 @@ mostrar
 1x2x3x4x5x6=720
 
 */
-
-public class productToNumber {   
-
-   public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
-      
-   }
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+public class productToNumber{   
+	public static void main(String[] args) {
+   		BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
+		int num = 0;
+		int resultado = 1;
+		String var = "";
+   		try{
+			System.out.println("Ingrese un numero");
+			num = Integer.parseInt(lector.readLine().trim());;
+			if(num >= 1){
+				for(int i = 1; i<=num;i++){
+					if(i != num){
+						var = var + i + "x";
+					}else{
+						var = var + i;
+					}
+					resultado = resultado * i;
+				}
+				System.out.println("Su resultado es: " + var + " = " + resultado);
+			}
+		}catch(IOException e){
+			System.out.println("\nError: " + e.getMessage());
+		}catch(NumberFormatException e){
+			System.out.println("\nError: El dato ingresado no es un dato valido.");
+		}
+	}
 }

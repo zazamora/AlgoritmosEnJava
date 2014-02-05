@@ -10,7 +10,8 @@ Dado un numero mayor a cero, imprima el valor actual desde cero hasta antes de l
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-public class whileValue {   
+
+public class whileValue{   
 	public static void main(String[] args) {
 		BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
 		int valorActual = 0;

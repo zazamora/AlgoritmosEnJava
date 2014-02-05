@@ -9,6 +9,7 @@ Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los num
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
+
 public class rangeSum{   
 	public static void main(String[] args){
 		BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));

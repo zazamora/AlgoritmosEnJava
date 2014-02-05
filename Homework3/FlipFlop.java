@@ -23,9 +23,8 @@ public class FlipFlop {
 			System.out.println("Ingrese un numero");
 			numeroActual = Integer.parseInt(lector.readLine().trim());
 			residuo = numeroActual%3;
-			residuo2 = numeroActual%4;
+			residuo2 = numeroActual%5;
 			if(residuo == 0){
-				residuo2 = numeroActual%5;
 				if(residuo2 == 0){
 					System.out.println("FlipFlop");
 				}else{
